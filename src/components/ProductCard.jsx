@@ -7,7 +7,7 @@ export default function ProductCard({
   onAddToCart,
 }) {
   return (
-    <div className="bg-gradient-to-br from-purple-100 to-purple-200 rounded-2xl shadow-md overflow-hidden w-[180px] hover:shadow-lg transition-all">
+    <div className="bg-gradient-to-br from-purple-100 to-purple-200 rounded-2xl shadow-md overflow-hidden w-[200px] hover:shadow-lg transition-all">
       {/* Image Section */}
       <div className="relative flex items-center justify-center h-48">
         <img
@@ -15,22 +15,7 @@ export default function ProductCard({
           alt={title}
           className="max-h-36 object-contain drop-shadow-lg transform hover:scale-105 transition-transform duration-300"
         />
-        <button className="absolute top-3 right-3 bg-white/70 hover:bg-white p-2 rounded-full shadow-sm">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth={1.5}
-            stroke="currentColor"
-            className="w-4 h-4 text-purple-600"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M21 8.25c0-2.485-2.239-4.5-5-4.5s-5 2.015-5 4.5c0 2.485 2.239 4.5 5 4.5s5-2.015 5-4.5zM12 21v-6M12 15H9m3 0h3"
-            />
-          </svg>
-        </button>
+
       </div>
 
       {/* Info Section */}

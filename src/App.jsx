@@ -1,22 +1,27 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom" 
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom"
 import Layout from "./components/Layout"
 import Products from "./pages/Products"
 import StoreContextProvider from "../context/StoreContext"
-export default function App(){
+import Cart from "./pages/Cart"
 
-  return(
+export default function App() {
+
+  return (
     <>
-    <BrowserRouter>
-    <StoreContextProvider>
-    <Layout>
-      <Routes>
-        <Route path="/Products" element={<Products/>}/>
-        <Route path="/Products/Categories/:category" element={<Products/>}/>
+      <BrowserRouter>
+        <StoreContextProvider>
+          <Layout>
+            <Routes>
+              <Route path="/" element={<Navigate to="/Products" />} />
+              <Route path="/Products" element={<Products />} />
+              <Route path="/Products/Categories/All" element={<Navigate to={"/Products"} />} />
+              <Route path="/Products/Categories/:category" element={<Products />} />
+              <Route path="/Cart" element={<Cart/>}/>
 
-      </Routes>
-    </Layout>
-    </StoreContextProvider>
-    </BrowserRouter>
+            </Routes>
+          </Layout>
+        </StoreContextProvider>
+      </BrowserRouter>
     </>
   )
 }

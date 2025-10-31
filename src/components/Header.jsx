@@ -1,11 +1,14 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { Menu, X, ShoppingCart, User } from "lucide-react";
 import SearchBox from "./SearchBox";
 import NavCategories from "./NavCategories";
 import logo from "../../public/logo.png"
+import { StoreContext } from "../../context/StoreContext";
+import { Link } from "react-router-dom";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const { cart, setCart } = useContext(StoreContext)
 
   return (
     <header className="bg-white shadow-sm w-full">
@@ -24,9 +27,11 @@ export default function Header() {
               alt="Logo"
               className="h-[50px] w-[50px]"
             />
+            <Link to="/">
             <span className="font-semibold text-sm ml-2 tracking-wide">
-              E-Commerce
+              E-Shop
             </span>
+            </Link>
           </div>
         </div>
 
@@ -36,9 +41,19 @@ export default function Header() {
         </div>
 
         {/* Right Icons */}
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-4 relative">
           <User className="cursor-pointer" />
-          <ShoppingCart className="cursor-pointer" />
+          <Link to="/Cart">
+          <ShoppingCart className="cursor-pointer rounded-lg m-2 hover:text-blue-600"  />
+          </Link>
+          {cart.length > 0 && (
+            <span
+              className="absolute -top-1.5 -right-2 bg-blue-500 text-white text-xs font-bold
+                     rounded-full w-5 h-5 flex items-center justify-center"
+            >
+              {cart.length}
+            </span>
+          )}
         </div>
       </div>
 
