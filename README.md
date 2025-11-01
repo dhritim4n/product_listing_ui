@@ -1,5 +1,5 @@
 # 🛍️ E-Shop — Modern React E-Commerce Website Product Listing
-Deployed link :- https://stupendous-moxie-f90f6b.netlify.app/Products/Categories/Beauty
+Deployed link :- https://stupendous-moxie-f90f6b.netlify.app
 A clean and responsive **e-commerce web app** built with **React + Tailwind CSS**.  
 
 
