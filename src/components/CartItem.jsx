@@ -16,6 +16,7 @@ export default function CartItem({ item, onQuantityChange, onRemove }) {
 
       {/* Quantity & Total */}
       <div className="flex items-center gap-6">
+        <p>Oty</p>
         <select
           value={item.quantity}
           onChange={(e) => onQuantityChange(item.id, e.target.value)}

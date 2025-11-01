@@ -46,7 +46,7 @@ const addItemToCart = (item) => {
     )
 
     return (
-        <div>
+        <div className="p-3">
 
         <p className="m-4">Results for : {searchQuery ?  searchQuery : (category ?  category : "All" )} </p>
         {products.length==0 && (

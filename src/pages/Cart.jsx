@@ -57,7 +57,7 @@ export default function Cart() {
         </div>
 
         <Link
-          to="/checkout"
+          to="/"
           className="mt-5 bg-blue-500 hover:bg-blue-600 text-white px-6 py-2 rounded-lg font-medium transition"
         >
           Check out

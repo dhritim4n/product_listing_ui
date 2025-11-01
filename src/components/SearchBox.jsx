@@ -25,7 +25,10 @@ export default function SearchBox({ placeholder = "Search...", className = "" })
       <input
         type="text"
         placeholder={placeholder}
-        onChange={(e) => setSearchQuery(e.target.value)}
+        onChange={(e) =>{ 
+          const value = e.target.value
+          setTimeout((e)=>setSearchQuery(value), 500)
+        }}
         onKeyDown={(e) => e.key === "Enter" && SearchItem()}
 
         className="w-full border border-gray-300 rounded-full pl-4 pr-10 py-2 focus:outline-none focus:ring-1 focus:ring-gray-400"
