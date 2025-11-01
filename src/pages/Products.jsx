@@ -48,11 +48,11 @@ const addItemToCart = (item) => {
     return (
         <div className="p-3">
 
-        <p className="m-4">Results for : {searchQuery ?  searchQuery : (category ?  category : "All" )} </p>
+        <p className="m-4">Results for : <b> {searchQuery ?  searchQuery : (category ?  category : "All" )} </b></p>
         {products.length==0 && (
             <NoSearchResults/>
         )}
-        <div className="grid grid-cols-2 gap-y-3.5 w-full h-full m-4 p-4 md:grid-cols-4">
+        <div className="grid grid-cols-2 gap-y-3.5 w-full h-full m-4  md:grid-cols-4">
             
             { 
                 

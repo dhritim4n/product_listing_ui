@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 export default function CartItem({ item, onQuantityChange, onRemove }) {
+
+
   return (
     <div className="flex items-center justify-between py-4 border-b border-blue-100">
       {/* Image & Info */}
@@ -15,7 +17,7 @@ export default function CartItem({ item, onQuantityChange, onRemove }) {
       </div>
 
       {/* Quantity & Total */}
-      <div className="flex items-center gap-6">
+      <div className="flex flex-col  items-center gap-6 md:flex-row">
         <p>Oty</p>
         <select
           value={item.quantity}
@@ -33,7 +35,7 @@ export default function CartItem({ item, onQuantityChange, onRemove }) {
         </p>
         <button
           onClick={() => onRemove(item.id)}
-          className="text-red-500 text-sm hover:underline"
+          className="text-white p-2 bg-red-500 rounded-xl text-sm hover:bg-red-400"
         >
           Remove
         </button>

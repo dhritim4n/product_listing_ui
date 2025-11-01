@@ -16,6 +16,7 @@ export default function Header() {
         {/* Left Section */}
         <div className="flex items-center gap-3">
           {/* Mobile Menu Button */}
+          
           <button className="md:hidden" onClick={() => setMenuOpen(!menuOpen)}>
             {menuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>

@@ -7,7 +7,7 @@ export default function ProductCard({
   onAddToCart,
 }) {
   return (
-    <div className="bg-gradient-to-br from-purple-100 to-purple-200 rounded-2xl shadow-md overflow-hidden w-[200px] hover:shadow-lg transition-all">
+    <div className="bg-gradient-to-br from-purple-100 p-2 to-purple-200 rounded-2xl shadow-md overflow-hidden  w-[150px] hover:shadow-lg transition-all lg:w-[230px]">
       {/* Image Section */}
       <div className="relative flex items-center justify-center h-48">
         <img
@@ -40,14 +40,14 @@ export default function ProductCard({
         </p>
 
         {/* Price + Button */}
-        <div className="flex items-center justify-between">
+        <div className="flex flex-col items-center justify-between lg:flex-row gap-2">
           <div>
             <p className="text-[10px] text-gray-500 font-semibold">PRICE</p>
             <p className="text-gray-900 font-bold text-base">${price}</p>
           </div>
           <button
             onClick={onAddToCart}
-            className="bg-purple-600 hover:bg-purple-700 text-white text-xs font-medium px-4 py-2 rounded-lg transition"
+            className="bg-purple-600 hover:bg-purple-700 text-white text-xs font-medium px-4 py-2 rounded-lg transition "
           >
             Add to cart
           </button>
