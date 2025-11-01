@@ -9,7 +9,7 @@ A clean and responsive **e-commerce web app** built with **React + Tailwind CSS*
 
 ### 🧩 Core Functionality
 - 🏷️ **Dynamic Product Listing** (Shoes, Clothing, Electronics, etc.)
-- 🔍 **Smart Search Bar** with 500ms debounce
+- 🔍 **Smart Search Bar** 
 - 🚫 **No Search Results** component with styled empty state
 - 🧭 **Reusable Layout** with Header and Footer
 - 🛒 **Category Filtering** (can be extended)
