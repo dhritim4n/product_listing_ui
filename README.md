@@ -1,12 +1,39 @@
-task - e-commerce product listing
-Day 1 
+# 🛍️ E-Shop — Modern React E-Commerce Website Product Listing
 
-inTime - 5.30pm
-outTime - 9.00pm
+A clean and responsive **e-commerce web app** built with **React + Tailwind CSS**.  
 
 
-Initialized Project
-Designed Navbar
-Setup Routes 
-added dyanamic route based on product category
+---
+
+## 🚀 Features
+
+### 🧩 Core Functionality
+- 🏷️ **Dynamic Product Listing** (Shoes, Clothing, Electronics, etc.)
+- 🔍 **Smart Search Bar** with 500ms debounce
+- 🚫 **No Search Results** component with styled empty state
+- 🧭 **Reusable Layout** with Header and Footer
+- 🛒 **Category Filtering** (can be extended)
+- 📱 **Responsive Design** (works on mobile & desktop)
+
+
+---
+
+## 🧠 Tech Stack
+
+- ⚛️ **React 18+**
+- 💨 **Tailwind CSS**
+- 🧰 **Lucide-React** (for icons)
+- 🪶 **Vite** or **Create React App** (depending on setup)
+
+---
+
+## 💻 Setup & Installation
+
+1. **Clone the repo**
+   ```bash
+   git clone https://github.com/dhritim4n/product_listing_ui
+   cd e-shop
+   npm install
+   npm run dev
+
 
